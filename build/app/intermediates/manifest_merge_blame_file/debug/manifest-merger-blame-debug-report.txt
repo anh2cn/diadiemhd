@@ -1,0 +1,810 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.panaceasoft.flutterbuyandsell"
+4    android:versionCode="9"
+5    android:versionName="1.6.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="29" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->C:\src\Flutter-BuySell\android\app\src\main\AndroidManifest.xml:8:5-67
+14-->C:\src\Flutter-BuySell\android\app\src\main\AndroidManifest.xml:8:22-64
+15    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+15-->C:\src\Flutter-BuySell\android\app\src\main\AndroidManifest.xml:9:5-81
+15-->C:\src\Flutter-BuySell\android\app\src\main\AndroidManifest.xml:9:22-78
+16    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+16-->C:\src\Flutter-BuySell\android\app\src\main\AndroidManifest.xml:10:5-80
+16-->C:\src\Flutter-BuySell\android\app\src\main\AndroidManifest.xml:10:22-77
+17    <uses-permission android:name="android.permission.VIBRATE" />
+17-->C:\src\Flutter-BuySell\android\app\src\main\AndroidManifest.xml:11:5-66
+17-->C:\src\Flutter-BuySell\android\app\src\main\AndroidManifest.xml:11:22-63
+18    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+18-->C:\src\Flutter-BuySell\android\app\src\main\AndroidManifest.xml:12:5-80
+18-->C:\src\Flutter-BuySell\android\app\src\main\AndroidManifest.xml:12:22-78
+19    <uses-permission android:name="android.permission.CAMERA" />
+19-->C:\src\Flutter-BuySell\android\app\src\main\AndroidManifest.xml:13:5-65
+19-->C:\src\Flutter-BuySell\android\app\src\main\AndroidManifest.xml:13:22-62
+20    <uses-permission android:name="android.permission.FLASHLIGHT" />
+20-->C:\src\Flutter-BuySell\android\app\src\main\AndroidManifest.xml:14:5-69
+20-->C:\src\Flutter-BuySell\android\app\src\main\AndroidManifest.xml:14:22-66
+21    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+21-->[:connectivity] C:\src\Flutter-BuySell\build\connectivity\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-79
+21-->[:connectivity] C:\src\Flutter-BuySell\build\connectivity\intermediates\library_manifest\debug\AndroidManifest.xml:7:22-76
+22    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+22-->[:connectivity] C:\src\Flutter-BuySell\build\connectivity\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-76
+22-->[:connectivity] C:\src\Flutter-BuySell\build\connectivity\intermediates\library_manifest\debug\AndroidManifest.xml:8:22-73
+23    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+23-->[com.google.android.gms:play-services-measurement-api:17.3.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\fabce4f473aeba396bdf65f41a5d679f\jetified-play-services-measurement-api-17.3.0\AndroidManifest.xml:24:5-68
+23-->[com.google.android.gms:play-services-measurement-api:17.3.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\fabce4f473aeba396bdf65f41a5d679f\jetified-play-services-measurement-api-17.3.0\AndroidManifest.xml:24:22-65
+24    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+24-->[com.google.firebase:firebase-iid:20.1.5] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\8fa693a370a4e1d5a2ce0c21ff4de332\jetified-firebase-iid-20.1.5\AndroidManifest.xml:26:5-82
+24-->[com.google.firebase:firebase-iid:20.1.5] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\8fa693a370a4e1d5a2ce0c21ff4de332\jetified-firebase-iid-20.1.5\AndroidManifest.xml:26:22-79
+25    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+25-->[com.google.android.gms:play-services-measurement:17.3.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\7087ea2099cdffcdeec0d833dbf3e2d7\jetified-play-services-measurement-17.3.0\AndroidManifest.xml:26:5-110
+25-->[com.google.android.gms:play-services-measurement:17.3.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\7087ea2099cdffcdeec0d833dbf3e2d7\jetified-play-services-measurement-17.3.0\AndroidManifest.xml:26:22-107
+26
+27    <uses-feature
+27-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\e22f7de9537b93a0daf0af5a80b1174d\jetified-play-services-maps-17.0.0\AndroidManifest.xml:26:5-28:35
+28        android:glEsVersion="0x00020000"
+28-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\e22f7de9537b93a0daf0af5a80b1174d\jetified-play-services-maps-17.0.0\AndroidManifest.xml:27:9-41
+29        android:required="true" />
+29-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\e22f7de9537b93a0daf0af5a80b1174d\jetified-play-services-maps-17.0.0\AndroidManifest.xml:28:9-32
+30    <uses-feature
+30-->[io.card:android-sdk:5.5.1] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\8a30dc28eee31a76c6b43a2df6c5dfdc\jetified-android-sdk-5.5.1\AndroidManifest.xml:12:5-14:36
+31        android:name="android.hardware.camera"
+31-->[io.card:android-sdk:5.5.1] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\8a30dc28eee31a76c6b43a2df6c5dfdc\jetified-android-sdk-5.5.1\AndroidManifest.xml:13:9-47
+32        android:required="false" />
+32-->[io.card:android-sdk:5.5.1] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\8a30dc28eee31a76c6b43a2df6c5dfdc\jetified-android-sdk-5.5.1\AndroidManifest.xml:14:9-33
+33    <uses-feature
+33-->[io.card:android-sdk:5.5.1] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\8a30dc28eee31a76c6b43a2df6c5dfdc\jetified-android-sdk-5.5.1\AndroidManifest.xml:15:5-17:36
+34        android:name="android.hardware.camera.autofocus"
+34-->[io.card:android-sdk:5.5.1] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\8a30dc28eee31a76c6b43a2df6c5dfdc\jetified-android-sdk-5.5.1\AndroidManifest.xml:16:9-57
+35        android:required="false" />
+35-->[io.card:android-sdk:5.5.1] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\8a30dc28eee31a76c6b43a2df6c5dfdc\jetified-android-sdk-5.5.1\AndroidManifest.xml:17:9-33
+36    <!--
+37 android:name="io.flutter.app.FlutterApplication"
+38    android:name="io.flutter.app.FlutterApplication"
+39    android:name=".Application"
+40    -->
+41    <application
+41-->C:\src\Flutter-BuySell\android\app\src\main\AndroidManifest.xml:18:5-79:19
+42        android:name="com.panaceasoft.flutterbuyandsell.Application"
+42-->C:\src\Flutter-BuySell\android\app\src\main\AndroidManifest.xml:19:9-36
+43        android:allowBackup="true"
+43-->[org.jfrog.cardinalcommerce.gradle:cardinalmobilesdk:2.2.1-2] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\d430d07d34feaf339c4be78a395bf999\jetified-cardinalmobilesdk-2.2.1-2\AndroidManifest.xml:14:9-35
+44        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+44-->[androidx.core:core:1.1.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\52c49e974fe8c98ce528b8300bc8a5a5\core-1.1.0\AndroidManifest.xml:24:18-86
+45        android:debuggable="true"
+46        android:icon="@mipmap/ic_launcher"
+46-->C:\src\Flutter-BuySell\android\app\src\main\AndroidManifest.xml:24:9-43
+47        android:label="Flutter Buy and Sell"
+47-->C:\src\Flutter-BuySell\android\app\src\main\AndroidManifest.xml:21:9-45
+48        android:requestLegacyExternalStorage="true"
+48-->C:\src\Flutter-BuySell\android\app\src\main\AndroidManifest.xml:23:9-52
+49        android:supportsRtl="true"
+49-->[com.facebook.android:facebook-login:5.5.1] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\240f4aadd5a6e9d12b516431e0caf01d\jetified-facebook-login-5.5.1\AndroidManifest.xml:28:18-44
+50        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+50-->[:stripe_payment] C:\src\Flutter-BuySell\build\stripe_payment\intermediates\library_manifest\debug\AndroidManifest.xml:11:18-74
+51        android:usesCleartextTraffic="true" >
+51-->C:\src\Flutter-BuySell\android\app\src\main\AndroidManifest.xml:22:9-44
+52        <activity
+52-->C:\src\Flutter-BuySell\android\app\src\main\AndroidManifest.xml:25:9-49:20
+53            android:name="com.panaceasoft.flutterbuyandsell.MainActivity"
+53-->C:\src\Flutter-BuySell\android\app\src\main\AndroidManifest.xml:26:13-41
+54            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+54-->C:\src\Flutter-BuySell\android\app\src\main\AndroidManifest.xml:29:13-163
+55            android:hardwareAccelerated="true"
+55-->C:\src\Flutter-BuySell\android\app\src\main\AndroidManifest.xml:30:13-47
+56            android:launchMode="singleTop"
+56-->C:\src\Flutter-BuySell\android\app\src\main\AndroidManifest.xml:27:13-43
+57            android:theme="@style/LaunchTheme"
+57-->C:\src\Flutter-BuySell\android\app\src\main\AndroidManifest.xml:28:13-47
+58            android:windowSoftInputMode="adjustResize" >
+58-->C:\src\Flutter-BuySell\android\app\src\main\AndroidManifest.xml:32:13-55
+59
+60            <!--
+61                 This keeps the window background of the activity showing
+62                 until Flutter renders its first frame. It can be removed if
+63                 there is no splash screen (such as the default splash screen
+64                 defined in @style/LaunchTheme).
+65            -->
+66            <meta-data
+66-->C:\src\Flutter-BuySell\android\app\src\main\AndroidManifest.xml:37:13-39:40
+67                android:name="io.flutter.app.android.SplashScreenUntilFirstFrame"
+67-->C:\src\Flutter-BuySell\android\app\src\main\AndroidManifest.xml:38:17-82
+68                android:value="true" />
+68-->C:\src\Flutter-BuySell\android\app\src\main\AndroidManifest.xml:39:17-37
+69
+70            <intent-filter>
+70-->C:\src\Flutter-BuySell\android\app\src\main\AndroidManifest.xml:40:13-43:29
+71                <action android:name="android.intent.action.MAIN" />
+71-->C:\src\Flutter-BuySell\android\app\src\main\AndroidManifest.xml:41:17-68
+71-->C:\src\Flutter-BuySell\android\app\src\main\AndroidManifest.xml:41:25-66
+72
+73                <category android:name="android.intent.category.LAUNCHER" />
+73-->C:\src\Flutter-BuySell\android\app\src\main\AndroidManifest.xml:42:17-76
+73-->C:\src\Flutter-BuySell\android\app\src\main\AndroidManifest.xml:42:27-74
+74            </intent-filter>
+75            <intent-filter>
+75-->C:\src\Flutter-BuySell\android\app\src\main\AndroidManifest.xml:44:13-47:29
+76                <action android:name="FLUTTER_NOTIFICATION_CLICK" />
+76-->C:\src\Flutter-BuySell\android\app\src\main\AndroidManifest.xml:45:17-69
+76-->C:\src\Flutter-BuySell\android\app\src\main\AndroidManifest.xml:45:25-66
+77
+78                <category android:name="android.intent.category.DEFAULT" />
+78-->C:\src\Flutter-BuySell\android\app\src\main\AndroidManifest.xml:46:17-76
+78-->C:\src\Flutter-BuySell\android\app\src\main\AndroidManifest.xml:46:27-73
+79            </intent-filter>
+80        </activity>
+81        <activity
+81-->C:\src\Flutter-BuySell\android\app\src\main\AndroidManifest.xml:50:9-58:20
+82            android:name="com.braintreepayments.api.BraintreeBrowserSwitchActivity"
+82-->C:\src\Flutter-BuySell\android\app\src\main\AndroidManifest.xml:50:19-90
+83            android:launchMode="singleTask" >
+83-->C:\src\Flutter-BuySell\android\app\src\main\AndroidManifest.xml:51:13-44
+84            <intent-filter>
+84-->C:\src\Flutter-BuySell\android\app\src\main\AndroidManifest.xml:52:13-57:29
+85                <action android:name="android.intent.action.VIEW" />
+85-->C:\src\Flutter-BuySell\android\app\src\main\AndroidManifest.xml:53:17-69
+85-->C:\src\Flutter-BuySell\android\app\src\main\AndroidManifest.xml:53:25-66
+86
+87                <category android:name="android.intent.category.DEFAULT" />
+87-->C:\src\Flutter-BuySell\android\app\src\main\AndroidManifest.xml:46:17-76
+87-->C:\src\Flutter-BuySell\android\app\src\main\AndroidManifest.xml:46:27-73
+88                <category android:name="android.intent.category.BROWSABLE" />
+88-->C:\src\Flutter-BuySell\android\app\src\main\AndroidManifest.xml:55:17-78
+88-->C:\src\Flutter-BuySell\android\app\src\main\AndroidManifest.xml:55:27-75
+89
+90                <data android:scheme="com.panaceasoft.flutterbuyandsell.braintree" />
+91            </intent-filter>
+92        </activity>
+93
+94        <meta-data
+94-->C:\src\Flutter-BuySell\android\app\src\main\AndroidManifest.xml:59:9-60:46
+95            android:name="com.facebook.sdk.ApplicationId"
+95-->C:\src\Flutter-BuySell\android\app\src\main\AndroidManifest.xml:59:20-65
+96            android:value="@string/facebook_app_id" />
+96-->C:\src\Flutter-BuySell\android\app\src\main\AndroidManifest.xml:60:5-44
+97        <!-- TODO: Replace with your real AdMob app ID -->
+98        <meta-data
+98-->C:\src\Flutter-BuySell\android\app\src\main\AndroidManifest.xml:62:9-64:66
+99            android:name="com.google.android.gms.ads.APPLICATION_ID"
+99-->C:\src\Flutter-BuySell\android\app\src\main\AndroidManifest.xml:63:13-69
+100            android:value="@string/android__admob_ads_id_key" />
+100-->C:\src\Flutter-BuySell\android\app\src\main\AndroidManifest.xml:64:13-63
+101
+102        <activity
+102-->C:\src\Flutter-BuySell\android\app\src\main\AndroidManifest.xml:65:9-68:40
+103            android:name="com.facebook.FacebookActivity"
+103-->C:\src\Flutter-BuySell\android\app\src\main\AndroidManifest.xml:65:19-63
+104            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+104-->C:\src\Flutter-BuySell\android\app\src\main\AndroidManifest.xml:66:5-101
+105            android:label="@string/app_name"
+105-->C:\src\Flutter-BuySell\android\app\src\main\AndroidManifest.xml:68:5-37
+106            android:theme="@style/com_facebook_activity_theme" />
+106-->[com.facebook.android:facebook-common:5.5.1] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\7ef080b114a0d6ea94cb7d1c60d652b1\jetified-facebook-common-5.5.1\AndroidManifest.xml:32:13-63
+107        <activity
+107-->C:\src\Flutter-BuySell\android\app\src\main\AndroidManifest.xml:69:9-78:20
+108            android:name="com.facebook.CustomTabActivity"
+108-->C:\src\Flutter-BuySell\android\app\src\main\AndroidManifest.xml:70:13-58
+109            android:exported="true" >
+109-->C:\src\Flutter-BuySell\android\app\src\main\AndroidManifest.xml:71:13-36
+110            <intent-filter>
+110-->C:\src\Flutter-BuySell\android\app\src\main\AndroidManifest.xml:72:13-77:29
+111                <action android:name="android.intent.action.VIEW" />
+111-->C:\src\Flutter-BuySell\android\app\src\main\AndroidManifest.xml:53:17-69
+111-->C:\src\Flutter-BuySell\android\app\src\main\AndroidManifest.xml:53:25-66
+112
+113                <category android:name="android.intent.category.DEFAULT" />
+113-->C:\src\Flutter-BuySell\android\app\src\main\AndroidManifest.xml:46:17-76
+113-->C:\src\Flutter-BuySell\android\app\src\main\AndroidManifest.xml:46:27-73
+114                <category android:name="android.intent.category.BROWSABLE" />
+114-->C:\src\Flutter-BuySell\android\app\src\main\AndroidManifest.xml:55:17-78
+114-->C:\src\Flutter-BuySell\android\app\src\main\AndroidManifest.xml:55:27-75
+115
+116                <data android:scheme="@string/fb_login_protocol_scheme" />
+117            </intent-filter>
+118        </activity>
+119        <activity
+119-->[:razorpay_flutter] C:\src\Flutter-BuySell\build\razorpay_flutter\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-11:20
+120            android:name="com.razorpay.CheckoutActivity"
+120-->[:razorpay_flutter] C:\src\Flutter-BuySell\build\razorpay_flutter\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-57
+121            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+121-->[com.razorpay:checkout:1.5.16] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\a8e028b28b7df41e9b6952597f4a278e\jetified-checkout-1.5.16\AndroidManifest.xml:20:13-83
+122            android:label="Razorpay Checkout"
+122-->[:razorpay_flutter] C:\src\Flutter-BuySell\build\razorpay_flutter\intermediates\library_manifest\debug\AndroidManifest.xml:10:13-46
+123            android:theme="@style/CheckoutTheme" >
+123-->[com.razorpay:checkout:1.5.16] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\a8e028b28b7df41e9b6952597f4a278e\jetified-checkout-1.5.16\AndroidManifest.xml:21:13-49
+124            <intent-filter>
+124-->[com.razorpay:checkout:1.5.16] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\a8e028b28b7df41e9b6952597f4a278e\jetified-checkout-1.5.16\AndroidManifest.xml:22:13-28:29
+125                <action android:name="android.intent.action.MAIN" />
+125-->C:\src\Flutter-BuySell\android\app\src\main\AndroidManifest.xml:41:17-68
+125-->C:\src\Flutter-BuySell\android\app\src\main\AndroidManifest.xml:41:25-66
+126
+127                <data
+128                    android:host="rzp.io"
+129                    android:scheme="io.rzp" />
+130            </intent-filter>
+131        </activity>
+132
+133        <meta-data
+133-->[:stripe_payment] C:\src\Flutter-BuySell\build\stripe_payment\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-14:36
+134            android:name="com.google.android.gms.wallet.api.enabled"
+134-->[:stripe_payment] C:\src\Flutter-BuySell\build\stripe_payment\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-69
+135            android:value="true" />
+135-->[:stripe_payment] C:\src\Flutter-BuySell\build\stripe_payment\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-33
+136
+137        <activity
+137-->[:stripe_payment] C:\src\Flutter-BuySell\build\stripe_payment\intermediates\library_manifest\debug\AndroidManifest.xml:16:9-20:75
+138            android:name="com.gettipsi.stripe.OpenBrowserActivity"
+138-->[:stripe_payment] C:\src\Flutter-BuySell\build\stripe_payment\intermediates\library_manifest\debug\AndroidManifest.xml:17:13-67
+139            android:exported="false"
+139-->[:stripe_payment] C:\src\Flutter-BuySell\build\stripe_payment\intermediates\library_manifest\debug\AndroidManifest.xml:18:13-37
+140            android:launchMode="singleTask"
+140-->[:stripe_payment] C:\src\Flutter-BuySell\build\stripe_payment\intermediates\library_manifest\debug\AndroidManifest.xml:19:13-44
+141            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+141-->[:stripe_payment] C:\src\Flutter-BuySell\build\stripe_payment\intermediates\library_manifest\debug\AndroidManifest.xml:20:13-72
+142        <activity
+142-->[:stripe_payment] C:\src\Flutter-BuySell\build\stripe_payment\intermediates\library_manifest\debug\AndroidManifest.xml:21:9-34:20
+143            android:name="com.gettipsi.stripe.RedirectUriReceiver"
+143-->[:stripe_payment] C:\src\Flutter-BuySell\build\stripe_payment\intermediates\library_manifest\debug\AndroidManifest.xml:22:13-67
+144            android:exported="true"
+144-->[:stripe_payment] C:\src\Flutter-BuySell\build\stripe_payment\intermediates\library_manifest\debug\AndroidManifest.xml:23:13-36
+145            android:launchMode="singleTask"
+145-->[:stripe_payment] C:\src\Flutter-BuySell\build\stripe_payment\intermediates\library_manifest\debug\AndroidManifest.xml:24:13-44
+146            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+146-->[:stripe_payment] C:\src\Flutter-BuySell\build\stripe_payment\intermediates\library_manifest\debug\AndroidManifest.xml:25:13-83
+147            <intent-filter>
+147-->[:stripe_payment] C:\src\Flutter-BuySell\build\stripe_payment\intermediates\library_manifest\debug\AndroidManifest.xml:26:13-33:29
+148                <action android:name="android.intent.action.VIEW" />
+148-->C:\src\Flutter-BuySell\android\app\src\main\AndroidManifest.xml:53:17-69
+148-->C:\src\Flutter-BuySell\android\app\src\main\AndroidManifest.xml:53:25-66
+149
+150                <category android:name="android.intent.category.DEFAULT" />
+150-->C:\src\Flutter-BuySell\android\app\src\main\AndroidManifest.xml:46:17-76
+150-->C:\src\Flutter-BuySell\android\app\src\main\AndroidManifest.xml:46:27-73
+151                <category android:name="android.intent.category.BROWSABLE" />
+151-->C:\src\Flutter-BuySell\android\app\src\main\AndroidManifest.xml:55:17-78
+151-->C:\src\Flutter-BuySell\android\app\src\main\AndroidManifest.xml:55:27-75
+152
+153                <data android:scheme="example" />
+154            </intent-filter>
+155        </activity>
+156
+157        <service
+157-->[:firebase_auth] C:\src\Flutter-BuySell\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
+158            android:name="com.google.firebase.components.ComponentDiscoveryService"
+158-->[:firebase_auth] C:\src\Flutter-BuySell\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:8:18-89
+159            android:directBootAware="true"
+159-->[com.google.firebase:firebase-common:19.3.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\e80826117f9961b481af711d153c1582\jetified-firebase-common-19.3.0\AndroidManifest.xml:34:13-43
+160            android:exported="false" >
+160-->[com.google.firebase:firebase-messaging:20.1.5] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\15fa93732da0ba9c7525d1ba9d1206b9\jetified-firebase-messaging-20.1.5\AndroidManifest.xml:37:13-37
+161            <meta-data
+161-->[:firebase_auth] C:\src\Flutter-BuySell\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+162                android:name="com.google.firebase.components:io.flutter.plugins.firebaseauth.FlutterFirebaseAppRegistrar"
+162-->[:firebase_auth] C:\src\Flutter-BuySell\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-122
+163                android:value="com.google.firebase.components.ComponentRegistrar" />
+163-->[:firebase_auth] C:\src\Flutter-BuySell\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+164            <meta-data
+164-->[:firebase_database] C:\src\Flutter-BuySell\build\firebase_database\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+165                android:name="com.google.firebase.components:io.flutter.plugins.firebase.database.FlutterFirebaseAppRegistrar"
+165-->[:firebase_database] C:\src\Flutter-BuySell\build\firebase_database\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-127
+166                android:value="com.google.firebase.components.ComponentRegistrar" />
+166-->[:firebase_database] C:\src\Flutter-BuySell\build\firebase_database\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+167            <meta-data
+167-->[:firebase_core] C:\src\Flutter-BuySell\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+168                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseAppRegistrar"
+168-->[:firebase_core] C:\src\Flutter-BuySell\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-123
+169                android:value="com.google.firebase.components.ComponentRegistrar" />
+169-->[:firebase_core] C:\src\Flutter-BuySell\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+170            <meta-data
+170-->[:firebase_messaging] C:\src\Flutter-BuySell\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-16:85
+171                android:name="com.google.firebase.components:io.flutter.plugins.firebasemessaging.FlutterFirebaseAppRegistrar"
+171-->[:firebase_messaging] C:\src\Flutter-BuySell\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:15:17-127
+172                android:value="com.google.firebase.components.ComponentRegistrar" />
+172-->[:firebase_messaging] C:\src\Flutter-BuySell\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:16:17-82
+173            <meta-data
+173-->[com.google.firebase:firebase-messaging:20.1.5] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\15fa93732da0ba9c7525d1ba9d1206b9\jetified-firebase-messaging-20.1.5\AndroidManifest.xml:38:13-40:85
+174                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+174-->[com.google.firebase:firebase-messaging:20.1.5] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\15fa93732da0ba9c7525d1ba9d1206b9\jetified-firebase-messaging-20.1.5\AndroidManifest.xml:39:17-119
+175                android:value="com.google.firebase.components.ComponentRegistrar" />
+175-->[com.google.firebase:firebase-messaging:20.1.5] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\15fa93732da0ba9c7525d1ba9d1206b9\jetified-firebase-messaging-20.1.5\AndroidManifest.xml:40:17-82
+176            <meta-data
+176-->[com.google.android.gms:play-services-measurement-api:17.3.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\fabce4f473aeba396bdf65f41a5d679f\jetified-play-services-measurement-api-17.3.0\AndroidManifest.xml:30:13-32:85
+177                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+177-->[com.google.android.gms:play-services-measurement-api:17.3.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\fabce4f473aeba396bdf65f41a5d679f\jetified-play-services-measurement-api-17.3.0\AndroidManifest.xml:31:17-139
+178                android:value="com.google.firebase.components.ComponentRegistrar" />
+178-->[com.google.android.gms:play-services-measurement-api:17.3.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\fabce4f473aeba396bdf65f41a5d679f\jetified-play-services-measurement-api-17.3.0\AndroidManifest.xml:32:17-82
+179            <meta-data
+179-->[com.google.firebase:firebase-iid:20.1.5] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\8fa693a370a4e1d5a2ce0c21ff4de332\jetified-firebase-iid-20.1.5\AndroidManifest.xml:32:13-34:85
+180                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+180-->[com.google.firebase:firebase-iid:20.1.5] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\8fa693a370a4e1d5a2ce0c21ff4de332\jetified-firebase-iid-20.1.5\AndroidManifest.xml:33:17-96
+181                android:value="com.google.firebase.components.ComponentRegistrar" />
+181-->[com.google.firebase:firebase-iid:20.1.5] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\8fa693a370a4e1d5a2ce0c21ff4de332\jetified-firebase-iid-20.1.5\AndroidManifest.xml:34:17-82
+182            <meta-data
+182-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\a2889e78a02a880771fae24b52633502\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:28:13-30:85
+183                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+183-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\a2889e78a02a880771fae24b52633502\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:29:17-115
+184                android:value="com.google.firebase.components.ComponentRegistrar" />
+184-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\a2889e78a02a880771fae24b52633502\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:30:17-82
+185            <meta-data
+185-->[com.google.firebase:firebase-installations:16.2.1] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\94d5fa1264af0a4edc1c8185de3b9065\jetified-firebase-installations-16.2.1\AndroidManifest.xml:17:13-19:85
+186                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+186-->[com.google.firebase:firebase-installations:16.2.1] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\94d5fa1264af0a4edc1c8185de3b9065\jetified-firebase-installations-16.2.1\AndroidManifest.xml:18:17-127
+187                android:value="com.google.firebase.components.ComponentRegistrar" />
+187-->[com.google.firebase:firebase-installations:16.2.1] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\94d5fa1264af0a4edc1c8185de3b9065\jetified-firebase-installations-16.2.1\AndroidManifest.xml:19:17-82
+188            <meta-data
+188-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\4d61ef9e6c9a1dda29b506901762f90c\jetified-firebase-auth-19.2.0\AndroidManifest.xml:36:13-38:85
+189                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+189-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\4d61ef9e6c9a1dda29b506901762f90c\jetified-firebase-auth-19.2.0\AndroidManifest.xml:37:17-109
+190                android:value="com.google.firebase.components.ComponentRegistrar" />
+190-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\4d61ef9e6c9a1dda29b506901762f90c\jetified-firebase-auth-19.2.0\AndroidManifest.xml:38:17-82
+191            <meta-data
+191-->[com.google.firebase:firebase-database:17.0.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\c3c6c66ce069cc08daa244a43e212b07\jetified-firebase-database-17.0.0\AndroidManifest.xml:30:13-32:85
+192                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+192-->[com.google.firebase:firebase-database:17.0.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\c3c6c66ce069cc08daa244a43e212b07\jetified-firebase-database-17.0.0\AndroidManifest.xml:31:17-109
+193                android:value="com.google.firebase.components.ComponentRegistrar" />
+193-->[com.google.firebase:firebase-database:17.0.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\c3c6c66ce069cc08daa244a43e212b07\jetified-firebase-database-17.0.0\AndroidManifest.xml:32:17-82
+194        </service>
+195        <service android:name="io.flutter.plugins.firebasemessaging.FlutterFirebaseMessagingService" >
+195-->[:firebase_messaging] C:\src\Flutter-BuySell\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
+195-->[:firebase_messaging] C:\src\Flutter-BuySell\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:8:18-101
+196            <intent-filter>
+196-->[:firebase_messaging] C:\src\Flutter-BuySell\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:29
+197                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+197-->[:firebase_messaging] C:\src\Flutter-BuySell\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-78
+197-->[:firebase_messaging] C:\src\Flutter-BuySell\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:10:25-75
+198            </intent-filter>
+199        </service>
+200
+201        <provider
+201-->[:esys_flutter_share] C:\src\Flutter-BuySell\build\esys_flutter_share\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-16:20
+202            android:name="de.esys.esysfluttershare.EsysFlutterShareFileProvider"
+202-->[:esys_flutter_share] C:\src\Flutter-BuySell\build\esys_flutter_share\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-81
+203            android:authorities="com.panaceasoft.flutterbuyandsell.fileprovider.github.com/orgs/esysberlin/esys-flutter-share"
+203-->[:esys_flutter_share] C:\src\Flutter-BuySell\build\esys_flutter_share\intermediates\library_manifest\debug\AndroidManifest.xml:10:13-110
+204            android:exported="false"
+204-->[:esys_flutter_share] C:\src\Flutter-BuySell\build\esys_flutter_share\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-37
+205            android:grantUriPermissions="true" >
+205-->[:esys_flutter_share] C:\src\Flutter-BuySell\build\esys_flutter_share\intermediates\library_manifest\debug\AndroidManifest.xml:12:13-47
+206            <meta-data
+206-->[:esys_flutter_share] C:\src\Flutter-BuySell\build\esys_flutter_share\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-15:72
+207                android:name="android.support.FILE_PROVIDER_PATHS"
+207-->[:esys_flutter_share] C:\src\Flutter-BuySell\build\esys_flutter_share\intermediates\library_manifest\debug\AndroidManifest.xml:14:17-67
+208                android:resource="@xml/esys_flutter_share_filepaths" />
+208-->[:esys_flutter_share] C:\src\Flutter-BuySell\build\esys_flutter_share\intermediates\library_manifest\debug\AndroidManifest.xml:15:17-69
+209        </provider>
+210
+211        <activity
+211-->[:url_launcher] C:\src\Flutter-BuySell\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-11:74
+212            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+212-->[:url_launcher] C:\src\Flutter-BuySell\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-74
+213            android:exported="false"
+213-->[:url_launcher] C:\src\Flutter-BuySell\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:10:13-37
+214            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+214-->[:url_launcher] C:\src\Flutter-BuySell\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-71
+215
+216        <provider
+216-->[:flutter_webview_plugin] C:\src\Flutter-BuySell\build\flutter_webview_plugin\intermediates\library_manifest\debug\AndroidManifest.xml:9:9-18:20
+217            android:name="androidx.core.content.FileProvider"
+217-->[:flutter_webview_plugin] C:\src\Flutter-BuySell\build\flutter_webview_plugin\intermediates\library_manifest\debug\AndroidManifest.xml:10:13-62
+218            android:authorities="com.panaceasoft.flutterbuyandsell.fileprovider"
+218-->[:flutter_webview_plugin] C:\src\Flutter-BuySell\build\flutter_webview_plugin\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-64
+219            android:exported="false"
+219-->[:flutter_webview_plugin] C:\src\Flutter-BuySell\build\flutter_webview_plugin\intermediates\library_manifest\debug\AndroidManifest.xml:12:13-37
+220            android:grantUriPermissions="true" >
+220-->[:flutter_webview_plugin] C:\src\Flutter-BuySell\build\flutter_webview_plugin\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-47
+221            <meta-data
+221-->[:esys_flutter_share] C:\src\Flutter-BuySell\build\esys_flutter_share\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-15:72
+222                android:name="android.support.FILE_PROVIDER_PATHS"
+222-->[:esys_flutter_share] C:\src\Flutter-BuySell\build\esys_flutter_share\intermediates\library_manifest\debug\AndroidManifest.xml:14:17-67
+223                android:resource="@xml/filepaths" />
+223-->[:esys_flutter_share] C:\src\Flutter-BuySell\build\esys_flutter_share\intermediates\library_manifest\debug\AndroidManifest.xml:15:17-69
+224        </provider>
+225        <!--
+226             FirebaseMessagingService performs security checks at runtime,
+227             but set to not exported to explicitly avoid allowing another app to call it.
+228        -->
+229        <service
+229-->[com.google.firebase:firebase-messaging:20.1.5] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\15fa93732da0ba9c7525d1ba9d1206b9\jetified-firebase-messaging-20.1.5\AndroidManifest.xml:28:9-34:19
+230            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+230-->[com.google.firebase:firebase-messaging:20.1.5] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\15fa93732da0ba9c7525d1ba9d1206b9\jetified-firebase-messaging-20.1.5\AndroidManifest.xml:29:13-82
+231            android:exported="false" >
+231-->[com.google.firebase:firebase-messaging:20.1.5] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\15fa93732da0ba9c7525d1ba9d1206b9\jetified-firebase-messaging-20.1.5\AndroidManifest.xml:30:13-37
+232            <intent-filter android:priority="-500" >
+232-->[:firebase_messaging] C:\src\Flutter-BuySell\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:29
+233                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+233-->[:firebase_messaging] C:\src\Flutter-BuySell\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-78
+233-->[:firebase_messaging] C:\src\Flutter-BuySell\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:10:25-75
+234            </intent-filter>
+235        </service>
+236
+237        <receiver
+237-->[com.google.firebase:firebase-iid:20.1.5] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\8fa693a370a4e1d5a2ce0c21ff4de332\jetified-firebase-iid-20.1.5\AndroidManifest.xml:37:9-44:20
+238            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+238-->[com.google.firebase:firebase-iid:20.1.5] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\8fa693a370a4e1d5a2ce0c21ff4de332\jetified-firebase-iid-20.1.5\AndroidManifest.xml:38:13-78
+239            android:exported="true"
+239-->[com.google.firebase:firebase-iid:20.1.5] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\8fa693a370a4e1d5a2ce0c21ff4de332\jetified-firebase-iid-20.1.5\AndroidManifest.xml:39:13-36
+240            android:permission="com.google.android.c2dm.permission.SEND" >
+240-->[com.google.firebase:firebase-iid:20.1.5] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\8fa693a370a4e1d5a2ce0c21ff4de332\jetified-firebase-iid-20.1.5\AndroidManifest.xml:40:13-73
+241            <intent-filter>
+241-->[com.google.firebase:firebase-iid:20.1.5] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\8fa693a370a4e1d5a2ce0c21ff4de332\jetified-firebase-iid-20.1.5\AndroidManifest.xml:41:13-43:29
+242                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+242-->[com.google.firebase:firebase-iid:20.1.5] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\8fa693a370a4e1d5a2ce0c21ff4de332\jetified-firebase-iid-20.1.5\AndroidManifest.xml:42:17-81
+242-->[com.google.firebase:firebase-iid:20.1.5] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\8fa693a370a4e1d5a2ce0c21ff4de332\jetified-firebase-iid-20.1.5\AndroidManifest.xml:42:25-78
+243            </intent-filter>
+244        </receiver>
+245        <receiver
+245-->[com.google.android.gms:play-services-measurement:17.3.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\7087ea2099cdffcdeec0d833dbf3e2d7\jetified-play-services-measurement-17.3.0\AndroidManifest.xml:29:9-33:20
+246            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+246-->[com.google.android.gms:play-services-measurement:17.3.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\7087ea2099cdffcdeec0d833dbf3e2d7\jetified-play-services-measurement-17.3.0\AndroidManifest.xml:30:13-85
+247            android:enabled="true"
+247-->[com.google.android.gms:play-services-measurement:17.3.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\7087ea2099cdffcdeec0d833dbf3e2d7\jetified-play-services-measurement-17.3.0\AndroidManifest.xml:31:13-35
+248            android:exported="false" >
+248-->[com.google.android.gms:play-services-measurement:17.3.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\7087ea2099cdffcdeec0d833dbf3e2d7\jetified-play-services-measurement-17.3.0\AndroidManifest.xml:32:13-37
+249        </receiver>
+250        <receiver
+250-->[com.google.android.gms:play-services-measurement:17.3.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\7087ea2099cdffcdeec0d833dbf3e2d7\jetified-play-services-measurement-17.3.0\AndroidManifest.xml:34:9-42:20
+251            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+251-->[com.google.android.gms:play-services-measurement:17.3.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\7087ea2099cdffcdeec0d833dbf3e2d7\jetified-play-services-measurement-17.3.0\AndroidManifest.xml:35:13-100
+252            android:enabled="true"
+252-->[com.google.android.gms:play-services-measurement:17.3.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\7087ea2099cdffcdeec0d833dbf3e2d7\jetified-play-services-measurement-17.3.0\AndroidManifest.xml:36:13-35
+253            android:exported="true"
+253-->[com.google.android.gms:play-services-measurement:17.3.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\7087ea2099cdffcdeec0d833dbf3e2d7\jetified-play-services-measurement-17.3.0\AndroidManifest.xml:37:13-36
+254            android:permission="android.permission.INSTALL_PACKAGES" >
+254-->[com.google.android.gms:play-services-measurement:17.3.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\7087ea2099cdffcdeec0d833dbf3e2d7\jetified-play-services-measurement-17.3.0\AndroidManifest.xml:38:13-69
+255            <intent-filter>
+255-->[com.google.android.gms:play-services-measurement:17.3.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\7087ea2099cdffcdeec0d833dbf3e2d7\jetified-play-services-measurement-17.3.0\AndroidManifest.xml:39:13-41:29
+256                <action android:name="com.android.vending.INSTALL_REFERRER" />
+256-->[com.google.android.gms:play-services-measurement:17.3.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\7087ea2099cdffcdeec0d833dbf3e2d7\jetified-play-services-measurement-17.3.0\AndroidManifest.xml:40:17-79
+256-->[com.google.android.gms:play-services-measurement:17.3.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\7087ea2099cdffcdeec0d833dbf3e2d7\jetified-play-services-measurement-17.3.0\AndroidManifest.xml:40:25-76
+257            </intent-filter>
+258        </receiver>
+259
+260        <service
+260-->[com.google.android.gms:play-services-measurement:17.3.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\7087ea2099cdffcdeec0d833dbf3e2d7\jetified-play-services-measurement-17.3.0\AndroidManifest.xml:44:9-47:40
+261            android:name="com.google.android.gms.measurement.AppMeasurementService"
+261-->[com.google.android.gms:play-services-measurement:17.3.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\7087ea2099cdffcdeec0d833dbf3e2d7\jetified-play-services-measurement-17.3.0\AndroidManifest.xml:45:13-84
+262            android:enabled="true"
+262-->[com.google.android.gms:play-services-measurement:17.3.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\7087ea2099cdffcdeec0d833dbf3e2d7\jetified-play-services-measurement-17.3.0\AndroidManifest.xml:46:13-35
+263            android:exported="false" />
+263-->[com.google.android.gms:play-services-measurement:17.3.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\7087ea2099cdffcdeec0d833dbf3e2d7\jetified-play-services-measurement-17.3.0\AndroidManifest.xml:47:13-37
+264        <service
+264-->[com.google.android.gms:play-services-measurement:17.3.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\7087ea2099cdffcdeec0d833dbf3e2d7\jetified-play-services-measurement-17.3.0\AndroidManifest.xml:48:9-52:72
+265            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+265-->[com.google.android.gms:play-services-measurement:17.3.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\7087ea2099cdffcdeec0d833dbf3e2d7\jetified-play-services-measurement-17.3.0\AndroidManifest.xml:49:13-87
+266            android:enabled="true"
+266-->[com.google.android.gms:play-services-measurement:17.3.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\7087ea2099cdffcdeec0d833dbf3e2d7\jetified-play-services-measurement-17.3.0\AndroidManifest.xml:50:13-35
+267            android:exported="false"
+267-->[com.google.android.gms:play-services-measurement:17.3.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\7087ea2099cdffcdeec0d833dbf3e2d7\jetified-play-services-measurement-17.3.0\AndroidManifest.xml:51:13-37
+268            android:permission="android.permission.BIND_JOB_SERVICE" />
+268-->[com.google.android.gms:play-services-measurement:17.3.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\7087ea2099cdffcdeec0d833dbf3e2d7\jetified-play-services-measurement-17.3.0\AndroidManifest.xml:52:13-69
+269
+270        <activity
+270-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\4d61ef9e6c9a1dda29b506901762f90c\jetified-firebase-auth-19.2.0\AndroidManifest.xml:24:9-31:50
+271            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+271-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\4d61ef9e6c9a1dda29b506901762f90c\jetified-firebase-auth-19.2.0\AndroidManifest.xml:25:13-85
+272            android:excludeFromRecents="true"
+272-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\4d61ef9e6c9a1dda29b506901762f90c\jetified-firebase-auth-19.2.0\AndroidManifest.xml:26:13-46
+273            android:exported="true"
+273-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\4d61ef9e6c9a1dda29b506901762f90c\jetified-firebase-auth-19.2.0\AndroidManifest.xml:27:13-36
+274            android:launchMode="singleTask"
+274-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\4d61ef9e6c9a1dda29b506901762f90c\jetified-firebase-auth-19.2.0\AndroidManifest.xml:28:13-44
+275            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+275-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\4d61ef9e6c9a1dda29b506901762f90c\jetified-firebase-auth-19.2.0\AndroidManifest.xml:29:13-102
+276            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+276-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\4d61ef9e6c9a1dda29b506901762f90c\jetified-firebase-auth-19.2.0\AndroidManifest.xml:30:13-72
+277
+278        <provider
+278-->[com.google.firebase:firebase-common:19.3.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\e80826117f9961b481af711d153c1582\jetified-firebase-common-19.3.0\AndroidManifest.xml:26:9-30:39
+279            android:name="com.google.firebase.provider.FirebaseInitProvider"
+279-->[com.google.firebase:firebase-common:19.3.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\e80826117f9961b481af711d153c1582\jetified-firebase-common-19.3.0\AndroidManifest.xml:27:13-77
+280            android:authorities="com.panaceasoft.flutterbuyandsell.firebaseinitprovider"
+280-->[com.google.firebase:firebase-common:19.3.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\e80826117f9961b481af711d153c1582\jetified-firebase-common-19.3.0\AndroidManifest.xml:28:13-72
+281            android:exported="false"
+281-->[com.google.firebase:firebase-common:19.3.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\e80826117f9961b481af711d153c1582\jetified-firebase-common-19.3.0\AndroidManifest.xml:29:13-37
+282            android:initOrder="100" />
+282-->[com.google.firebase:firebase-common:19.3.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\e80826117f9961b481af711d153c1582\jetified-firebase-common-19.3.0\AndroidManifest.xml:30:13-36
+283
+284        <activity
+284-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\66693503c4f096403c9a1e12877d530c\jetified-play-services-auth-16.0.1\AndroidManifest.xml:23:9-27:75
+285            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+285-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\66693503c4f096403c9a1e12877d530c\jetified-play-services-auth-16.0.1\AndroidManifest.xml:24:13-93
+286            android:excludeFromRecents="true"
+286-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\66693503c4f096403c9a1e12877d530c\jetified-play-services-auth-16.0.1\AndroidManifest.xml:25:13-46
+287            android:exported="false"
+287-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\66693503c4f096403c9a1e12877d530c\jetified-play-services-auth-16.0.1\AndroidManifest.xml:26:13-37
+288            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+288-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\66693503c4f096403c9a1e12877d530c\jetified-play-services-auth-16.0.1\AndroidManifest.xml:27:13-72
+289        <!--
+290            Service handling Google Sign-In user revocation. For apps that do not integrate with
+291            Google Sign-In, this service will never be started.
+292        -->
+293        <service
+293-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\66693503c4f096403c9a1e12877d530c\jetified-play-services-auth-16.0.1\AndroidManifest.xml:33:9-36:110
+294            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+294-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\66693503c4f096403c9a1e12877d530c\jetified-play-services-auth-16.0.1\AndroidManifest.xml:34:13-89
+295            android:exported="true"
+295-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\66693503c4f096403c9a1e12877d530c\jetified-play-services-auth-16.0.1\AndroidManifest.xml:35:13-36
+296            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" /> <!-- Needs to be explicitly declared on P+ -->
+296-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\66693503c4f096403c9a1e12877d530c\jetified-play-services-auth-16.0.1\AndroidManifest.xml:36:13-107
+297        <uses-library
+297-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\e22f7de9537b93a0daf0af5a80b1174d\jetified-play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
+298            android:name="org.apache.http.legacy"
+298-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\e22f7de9537b93a0daf0af5a80b1174d\jetified-play-services-maps-17.0.0\AndroidManifest.xml:34:13-50
+299            android:required="false" />
+299-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\e22f7de9537b93a0daf0af5a80b1174d\jetified-play-services-maps-17.0.0\AndroidManifest.xml:35:13-37
+300
+301        <activity
+301-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\7df9bd2910638796cc6b2c9debfd8d34\jetified-play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
+302            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+302-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\7df9bd2910638796cc6b2c9debfd8d34\jetified-play-services-base-17.1.0\AndroidManifest.xml:24:13-79
+303            android:exported="false"
+303-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\7df9bd2910638796cc6b2c9debfd8d34\jetified-play-services-base-17.1.0\AndroidManifest.xml:25:13-37
+304            android:theme="@android:style/Theme.Translucent.NoTitleBar" /> <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
+304-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\7df9bd2910638796cc6b2c9debfd8d34\jetified-play-services-base-17.1.0\AndroidManifest.xml:26:13-72
+305        <activity
+305-->[com.google.android.gms:play-services-ads-lite:17.0.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\8020f0e5715e2289cc128dadb969db9c\jetified-play-services-ads-lite-17.0.0\AndroidManifest.xml:29:9-33:64
+306            android:name="com.google.android.gms.ads.AdActivity"
+306-->[com.google.android.gms:play-services-ads-lite:17.0.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\8020f0e5715e2289cc128dadb969db9c\jetified-play-services-ads-lite-17.0.0\AndroidManifest.xml:30:13-65
+307            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+307-->[com.google.android.gms:play-services-ads-lite:17.0.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\8020f0e5715e2289cc128dadb969db9c\jetified-play-services-ads-lite-17.0.0\AndroidManifest.xml:31:13-122
+308            android:exported="false"
+308-->[com.google.android.gms:play-services-ads-lite:17.0.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\8020f0e5715e2289cc128dadb969db9c\jetified-play-services-ads-lite-17.0.0\AndroidManifest.xml:32:13-37
+309            android:theme="@android:style/Theme.Translucent" />
+309-->[com.google.android.gms:play-services-ads-lite:17.0.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\8020f0e5715e2289cc128dadb969db9c\jetified-play-services-ads-lite-17.0.0\AndroidManifest.xml:33:13-61
+310
+311        <provider
+311-->[com.google.android.gms:play-services-ads-lite:17.0.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\8020f0e5715e2289cc128dadb969db9c\jetified-play-services-ads-lite-17.0.0\AndroidManifest.xml:35:9-39:39
+312            android:name="com.google.android.gms.ads.MobileAdsInitProvider"
+312-->[com.google.android.gms:play-services-ads-lite:17.0.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\8020f0e5715e2289cc128dadb969db9c\jetified-play-services-ads-lite-17.0.0\AndroidManifest.xml:36:13-76
+313            android:authorities="com.panaceasoft.flutterbuyandsell.mobileadsinitprovider"
+313-->[com.google.android.gms:play-services-ads-lite:17.0.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\8020f0e5715e2289cc128dadb969db9c\jetified-play-services-ads-lite-17.0.0\AndroidManifest.xml:37:13-73
+314            android:exported="false"
+314-->[com.google.android.gms:play-services-ads-lite:17.0.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\8020f0e5715e2289cc128dadb969db9c\jetified-play-services-ads-lite-17.0.0\AndroidManifest.xml:38:13-37
+315            android:initOrder="100" />
+315-->[com.google.android.gms:play-services-ads-lite:17.0.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\8020f0e5715e2289cc128dadb969db9c\jetified-play-services-ads-lite-17.0.0\AndroidManifest.xml:39:13-36
+316
+317        <meta-data
+317-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\fcc01de85e4e7d696c3a054052656a12\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+318            android:name="com.google.android.gms.version"
+318-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\fcc01de85e4e7d696c3a054052656a12\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+319            android:value="@integer/google_play_services_version" />
+319-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\fcc01de85e4e7d696c3a054052656a12\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+320
+321        <activity
+321-->[com.stripe:stripe-android:10.4.6] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\c7e318723fff99e87fdff8369d4a334b\jetified-stripe-android-10.4.6\AndroidManifest.xml:12:9-14:57
+322            android:name="com.stripe.android.view.AddPaymentMethodActivity"
+322-->[com.stripe:stripe-android:10.4.6] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\c7e318723fff99e87fdff8369d4a334b\jetified-stripe-android-10.4.6\AndroidManifest.xml:13:13-76
+323            android:theme="@style/StripeDefaultTheme" />
+323-->[com.stripe:stripe-android:10.4.6] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\c7e318723fff99e87fdff8369d4a334b\jetified-stripe-android-10.4.6\AndroidManifest.xml:14:13-54
+324        <activity
+324-->[com.stripe:stripe-android:10.4.6] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\c7e318723fff99e87fdff8369d4a334b\jetified-stripe-android-10.4.6\AndroidManifest.xml:15:9-17:57
+325            android:name="com.stripe.android.view.PaymentMethodsActivity"
+325-->[com.stripe:stripe-android:10.4.6] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\c7e318723fff99e87fdff8369d4a334b\jetified-stripe-android-10.4.6\AndroidManifest.xml:16:13-74
+326            android:theme="@style/StripeDefaultTheme" />
+326-->[com.stripe:stripe-android:10.4.6] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\c7e318723fff99e87fdff8369d4a334b\jetified-stripe-android-10.4.6\AndroidManifest.xml:17:13-54
+327        <activity
+327-->[com.stripe:stripe-android:10.4.6] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\c7e318723fff99e87fdff8369d4a334b\jetified-stripe-android-10.4.6\AndroidManifest.xml:18:9-20:57
+328            android:name="com.stripe.android.view.PaymentFlowActivity"
+328-->[com.stripe:stripe-android:10.4.6] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\c7e318723fff99e87fdff8369d4a334b\jetified-stripe-android-10.4.6\AndroidManifest.xml:19:13-71
+329            android:theme="@style/StripeDefaultTheme" />
+329-->[com.stripe:stripe-android:10.4.6] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\c7e318723fff99e87fdff8369d4a334b\jetified-stripe-android-10.4.6\AndroidManifest.xml:20:13-54
+330        <activity
+330-->[com.stripe:stripe-android:10.4.6] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\c7e318723fff99e87fdff8369d4a334b\jetified-stripe-android-10.4.6\AndroidManifest.xml:21:9-23:57
+331            android:name="com.stripe.android.view.PaymentAuthWebViewActivity"
+331-->[com.stripe:stripe-android:10.4.6] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\c7e318723fff99e87fdff8369d4a334b\jetified-stripe-android-10.4.6\AndroidManifest.xml:22:13-78
+332            android:theme="@style/StripeDefaultTheme" />
+332-->[com.stripe:stripe-android:10.4.6] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\c7e318723fff99e87fdff8369d4a334b\jetified-stripe-android-10.4.6\AndroidManifest.xml:23:13-54
+333        <activity
+333-->[com.stripe:stripe-android:10.4.6] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\c7e318723fff99e87fdff8369d4a334b\jetified-stripe-android-10.4.6\AndroidManifest.xml:24:9-26:57
+334            android:name="com.stripe.android.view.PaymentRelayActivity"
+334-->[com.stripe:stripe-android:10.4.6] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\c7e318723fff99e87fdff8369d4a334b\jetified-stripe-android-10.4.6\AndroidManifest.xml:25:13-72
+335            android:theme="@style/StripeDefaultTheme" />
+335-->[com.stripe:stripe-android:10.4.6] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\c7e318723fff99e87fdff8369d4a334b\jetified-stripe-android-10.4.6\AndroidManifest.xml:26:13-54
+336        <activity
+336-->[com.braintreepayments.api:drop-in:4.5.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\7a35009ec2416181694d25efe3d7a3da\jetified-drop-in-4.5.0\AndroidManifest.xml:18:9-20:64
+337            android:name="com.braintreepayments.api.dropin.DropInActivity"
+337-->[com.braintreepayments.api:drop-in:4.5.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\7a35009ec2416181694d25efe3d7a3da\jetified-drop-in-4.5.0\AndroidManifest.xml:19:13-75
+338            android:theme="@style/bt_drop_in_activity_theme" />
+338-->[com.braintreepayments.api:drop-in:4.5.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\7a35009ec2416181694d25efe3d7a3da\jetified-drop-in-4.5.0\AndroidManifest.xml:20:13-61
+339        <activity
+339-->[com.braintreepayments.api:drop-in:4.5.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\7a35009ec2416181694d25efe3d7a3da\jetified-drop-in-4.5.0\AndroidManifest.xml:21:9-23:65
+340            android:name="com.braintreepayments.api.dropin.AddCardActivity"
+340-->[com.braintreepayments.api:drop-in:4.5.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\7a35009ec2416181694d25efe3d7a3da\jetified-drop-in-4.5.0\AndroidManifest.xml:22:13-76
+341            android:theme="@style/bt_add_card_activity_theme" />
+341-->[com.braintreepayments.api:drop-in:4.5.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\7a35009ec2416181694d25efe3d7a3da\jetified-drop-in-4.5.0\AndroidManifest.xml:23:13-62
+342        <activity
+342-->[com.braintreepayments.api:drop-in:4.5.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\7a35009ec2416181694d25efe3d7a3da\jetified-drop-in-4.5.0\AndroidManifest.xml:24:9-26:70
+343            android:name="com.braintreepayments.api.dropin.VaultManagerActivity"
+343-->[com.braintreepayments.api:drop-in:4.5.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\7a35009ec2416181694d25efe3d7a3da\jetified-drop-in-4.5.0\AndroidManifest.xml:25:13-81
+344            android:theme="@style/bt_vault_manager_activity_theme" />
+344-->[com.braintreepayments.api:drop-in:4.5.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\7a35009ec2416181694d25efe3d7a3da\jetified-drop-in-4.5.0\AndroidManifest.xml:26:13-67
+345
+346        <service android:name="com.braintreepayments.api.internal.AnalyticsIntentService" />
+346-->[com.braintreepayments.api:braintree:3.7.2] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\3fe75e275b39d0553a15a15315a6cbd9\jetified-braintree-3.7.2\AndroidManifest.xml:17:9-93
+346-->[com.braintreepayments.api:braintree:3.7.2] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\3fe75e275b39d0553a15a15315a6cbd9\jetified-braintree-3.7.2\AndroidManifest.xml:17:18-90
+347
+348        <activity android:name="com.braintreepayments.api.ThreeDSecureActivity" />
+348-->[com.braintreepayments.api:braintree:3.7.2] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\3fe75e275b39d0553a15a15315a6cbd9\jetified-braintree-3.7.2\AndroidManifest.xml:19:9-83
+348-->[com.braintreepayments.api:braintree:3.7.2] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\3fe75e275b39d0553a15a15315a6cbd9\jetified-braintree-3.7.2\AndroidManifest.xml:19:19-80
+349        <activity
+349-->[com.stripe:stripe-3ds2-android:1.2.2] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\c86d66f2a32606476cfc55cf3628fa63\jetified-stripe-3ds2-android-1.2.2\AndroidManifest.xml:12:9-14:54
+350            android:name="com.stripe.android.stripe3ds2.views.ChallengeActivity"
+350-->[com.stripe:stripe-3ds2-android:1.2.2] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\c86d66f2a32606476cfc55cf3628fa63\jetified-stripe-3ds2-android-1.2.2\AndroidManifest.xml:13:13-81
+351            android:theme="@style/Stripe3DS2Theme" />
+351-->[com.stripe:stripe-3ds2-android:1.2.2] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\c86d66f2a32606476cfc55cf3628fa63\jetified-stripe-3ds2-android-1.2.2\AndroidManifest.xml:14:13-51
+352        <activity
+352-->[com.stripe:stripe-3ds2-android:1.2.2] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\c86d66f2a32606476cfc55cf3628fa63\jetified-stripe-3ds2-android-1.2.2\AndroidManifest.xml:15:9-17:54
+353            android:name="com.stripe.android.stripe3ds2.views.ChallengeProgressDialogActivity"
+353-->[com.stripe:stripe-3ds2-android:1.2.2] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\c86d66f2a32606476cfc55cf3628fa63\jetified-stripe-3ds2-android-1.2.2\AndroidManifest.xml:16:13-95
+354            android:theme="@style/Stripe3DS2Theme" />
+354-->[com.stripe:stripe-3ds2-android:1.2.2] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\c86d66f2a32606476cfc55cf3628fa63\jetified-stripe-3ds2-android-1.2.2\AndroidManifest.xml:17:13-51
+355
+356        <provider
+356-->[com.sangcomz:FishBun:0.11.2] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\afd64630c8431d777c114cea1d890737\jetified-FishBun-0.11.2\AndroidManifest.xml:12:9-20:20
+357            android:name="com.sangcomz.fishbun.FishBunFileProvider"
+357-->[com.sangcomz:FishBun:0.11.2] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\afd64630c8431d777c114cea1d890737\jetified-FishBun-0.11.2\AndroidManifest.xml:13:13-68
+358            android:authorities="com.panaceasoft.flutterbuyandsell.fishbunfileprovider"
+358-->[com.sangcomz:FishBun:0.11.2] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\afd64630c8431d777c114cea1d890737\jetified-FishBun-0.11.2\AndroidManifest.xml:14:13-71
+359            android:exported="false"
+359-->[com.sangcomz:FishBun:0.11.2] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\afd64630c8431d777c114cea1d890737\jetified-FishBun-0.11.2\AndroidManifest.xml:15:13-37
+360            android:grantUriPermissions="true" >
+360-->[com.sangcomz:FishBun:0.11.2] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\afd64630c8431d777c114cea1d890737\jetified-FishBun-0.11.2\AndroidManifest.xml:16:13-47
+361            <meta-data
+361-->[:esys_flutter_share] C:\src\Flutter-BuySell\build\esys_flutter_share\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-15:72
+362                android:name="android.support.FILE_PROVIDER_PATHS"
+362-->[:esys_flutter_share] C:\src\Flutter-BuySell\build\esys_flutter_share\intermediates\library_manifest\debug\AndroidManifest.xml:14:17-67
+363                android:resource="@xml/provider_paths" />
+363-->[:esys_flutter_share] C:\src\Flutter-BuySell\build\esys_flutter_share\intermediates\library_manifest\debug\AndroidManifest.xml:15:17-69
+364        </provider>
+365
+366        <activity
+366-->[com.sangcomz:FishBun:0.11.2] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\afd64630c8431d777c114cea1d890737\jetified-FishBun-0.11.2\AndroidManifest.xml:22:9-25:51
+367            android:name="com.sangcomz.fishbun.ui.album.AlbumActivity"
+367-->[com.sangcomz:FishBun:0.11.2] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\afd64630c8431d777c114cea1d890737\jetified-FishBun-0.11.2\AndroidManifest.xml:23:13-71
+368            android:label="@string/album"
+368-->[com.sangcomz:FishBun:0.11.2] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\afd64630c8431d777c114cea1d890737\jetified-FishBun-0.11.2\AndroidManifest.xml:24:13-42
+369            android:theme="@style/FishBunTheme" />
+369-->[com.sangcomz:FishBun:0.11.2] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\afd64630c8431d777c114cea1d890737\jetified-FishBun-0.11.2\AndroidManifest.xml:25:13-48
+370        <activity
+370-->[com.sangcomz:FishBun:0.11.2] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\afd64630c8431d777c114cea1d890737\jetified-FishBun-0.11.2\AndroidManifest.xml:26:9-28:51
+371            android:name="com.sangcomz.fishbun.ui.picker.PickerActivity"
+371-->[com.sangcomz:FishBun:0.11.2] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\afd64630c8431d777c114cea1d890737\jetified-FishBun-0.11.2\AndroidManifest.xml:27:13-73
+372            android:theme="@style/FishBunTheme" />
+372-->[com.sangcomz:FishBun:0.11.2] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\afd64630c8431d777c114cea1d890737\jetified-FishBun-0.11.2\AndroidManifest.xml:28:13-48
+373        <activity
+373-->[com.sangcomz:FishBun:0.11.2] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\afd64630c8431d777c114cea1d890737\jetified-FishBun-0.11.2\AndroidManifest.xml:29:9-31:54
+374            android:name="com.sangcomz.fishbun.ui.detail.DetailActivity"
+374-->[com.sangcomz:FishBun:0.11.2] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\afd64630c8431d777c114cea1d890737\jetified-FishBun-0.11.2\AndroidManifest.xml:30:13-73
+375            android:theme="@style/DetailViewTheme" />
+375-->[com.sangcomz:FishBun:0.11.2] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\afd64630c8431d777c114cea1d890737\jetified-FishBun-0.11.2\AndroidManifest.xml:31:13-51
+376        <activity android:name="com.facebook.CustomTabMainActivity" />
+376-->[com.facebook.android:facebook-common:5.5.1] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\7ef080b114a0d6ea94cb7d1c60d652b1\jetified-facebook-common-5.5.1\AndroidManifest.xml:33:9-71
+376-->[com.facebook.android:facebook-common:5.5.1] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\7ef080b114a0d6ea94cb7d1c60d652b1\jetified-facebook-common-5.5.1\AndroidManifest.xml:33:19-68
+377        <!--
+378         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
+379         with the application context. This config is merged in with the host app's manifest,
+380         but there can only be one provider with the same authority activated at any given
+381         point; so if the end user has two or more different apps that use Facebook SDK, only the
+382         first one will be able to use the provider. To work around this problem, we use the
+383         following placeholder in the authority to identify each host application as if it was
+384         a completely different provider.
+385        -->
+386        <provider
+386-->[com.facebook.android:facebook-core:5.5.1] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\f2cfea40bdc732e8bc3e6f29ee8b4452\jetified-facebook-core-5.5.1\AndroidManifest.xml:39:9-42:40
+387            android:name="com.facebook.internal.FacebookInitProvider"
+387-->[com.facebook.android:facebook-core:5.5.1] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\f2cfea40bdc732e8bc3e6f29ee8b4452\jetified-facebook-core-5.5.1\AndroidManifest.xml:40:13-70
+388            android:authorities="com.panaceasoft.flutterbuyandsell.FacebookInitProvider"
+388-->[com.facebook.android:facebook-core:5.5.1] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\f2cfea40bdc732e8bc3e6f29ee8b4452\jetified-facebook-core-5.5.1\AndroidManifest.xml:41:13-72
+389            android:exported="false" />
+389-->[com.facebook.android:facebook-core:5.5.1] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\f2cfea40bdc732e8bc3e6f29ee8b4452\jetified-facebook-core-5.5.1\AndroidManifest.xml:42:13-37
+390
+391        <receiver
+391-->[com.facebook.android:facebook-core:5.5.1] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\f2cfea40bdc732e8bc3e6f29ee8b4452\jetified-facebook-core-5.5.1\AndroidManifest.xml:44:9-50:20
+392            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
+392-->[com.facebook.android:facebook-core:5.5.1] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\f2cfea40bdc732e8bc3e6f29ee8b4452\jetified-facebook-core-5.5.1\AndroidManifest.xml:45:13-86
+393            android:exported="false" >
+393-->[com.facebook.android:facebook-core:5.5.1] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\f2cfea40bdc732e8bc3e6f29ee8b4452\jetified-facebook-core-5.5.1\AndroidManifest.xml:46:13-37
+394            <intent-filter>
+394-->[com.facebook.android:facebook-core:5.5.1] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\f2cfea40bdc732e8bc3e6f29ee8b4452\jetified-facebook-core-5.5.1\AndroidManifest.xml:47:13-49:29
+395                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
+395-->[com.facebook.android:facebook-core:5.5.1] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\f2cfea40bdc732e8bc3e6f29ee8b4452\jetified-facebook-core-5.5.1\AndroidManifest.xml:48:17-95
+395-->[com.facebook.android:facebook-core:5.5.1] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\f2cfea40bdc732e8bc3e6f29ee8b4452\jetified-facebook-core-5.5.1\AndroidManifest.xml:48:25-92
+396            </intent-filter>
+397        </receiver>
+398        <receiver
+398-->[com.facebook.android:facebook-core:5.5.1] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\f2cfea40bdc732e8bc3e6f29ee8b4452\jetified-facebook-core-5.5.1\AndroidManifest.xml:51:9-58:20
+399            android:name="com.facebook.CampaignTrackingReceiver"
+399-->[com.facebook.android:facebook-core:5.5.1] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\f2cfea40bdc732e8bc3e6f29ee8b4452\jetified-facebook-core-5.5.1\AndroidManifest.xml:52:13-65
+400            android:exported="true"
+400-->[com.facebook.android:facebook-core:5.5.1] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\f2cfea40bdc732e8bc3e6f29ee8b4452\jetified-facebook-core-5.5.1\AndroidManifest.xml:53:13-36
+401            android:permission="android.permission.INSTALL_PACKAGES" >
+401-->[com.facebook.android:facebook-core:5.5.1] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\f2cfea40bdc732e8bc3e6f29ee8b4452\jetified-facebook-core-5.5.1\AndroidManifest.xml:54:13-69
+402            <intent-filter>
+402-->[com.google.android.gms:play-services-measurement:17.3.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\7087ea2099cdffcdeec0d833dbf3e2d7\jetified-play-services-measurement-17.3.0\AndroidManifest.xml:39:13-41:29
+403                <action android:name="com.android.vending.INSTALL_REFERRER" />
+403-->[com.google.android.gms:play-services-measurement:17.3.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\7087ea2099cdffcdeec0d833dbf3e2d7\jetified-play-services-measurement-17.3.0\AndroidManifest.xml:40:17-79
+403-->[com.google.android.gms:play-services-measurement:17.3.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\7087ea2099cdffcdeec0d833dbf3e2d7\jetified-play-services-measurement-17.3.0\AndroidManifest.xml:40:25-76
+404            </intent-filter>
+405        </receiver>
+406
+407        <service
+407-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\f081aa236bfa3d2c1086b1742c0edb60\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:29:9-35:19
+408            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+408-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\f081aa236bfa3d2c1086b1742c0edb60\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:30:13-103
+409            android:exported="false" >
+409-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\f081aa236bfa3d2c1086b1742c0edb60\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:31:13-37
+410            <meta-data
+410-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\f081aa236bfa3d2c1086b1742c0edb60\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:32:13-34:39
+411                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+411-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\f081aa236bfa3d2c1086b1742c0edb60\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:33:17-94
+412                android:value="cct" />
+412-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\f081aa236bfa3d2c1086b1742c0edb60\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:34:17-36
+413        </service>
+414        <service
+414-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\3bcdd5e68833680f89e6aa6cce288abe\jetified-transport-runtime-2.2.0\AndroidManifest.xml:26:9-30:19
+415            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+415-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\3bcdd5e68833680f89e6aa6cce288abe\jetified-transport-runtime-2.2.0\AndroidManifest.xml:27:13-117
+416            android:exported="false"
+416-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\3bcdd5e68833680f89e6aa6cce288abe\jetified-transport-runtime-2.2.0\AndroidManifest.xml:28:13-37
+417            android:permission="android.permission.BIND_JOB_SERVICE" >
+417-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\3bcdd5e68833680f89e6aa6cce288abe\jetified-transport-runtime-2.2.0\AndroidManifest.xml:29:13-69
+418        </service>
+419
+420        <receiver
+420-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\3bcdd5e68833680f89e6aa6cce288abe\jetified-transport-runtime-2.2.0\AndroidManifest.xml:32:9-34:40
+421            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+421-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\3bcdd5e68833680f89e6aa6cce288abe\jetified-transport-runtime-2.2.0\AndroidManifest.xml:33:13-132
+422            android:exported="false" />
+422-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\3bcdd5e68833680f89e6aa6cce288abe\jetified-transport-runtime-2.2.0\AndroidManifest.xml:34:13-37
+423
+424        <activity
+424-->[io.card:android-sdk:5.5.1] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\8a30dc28eee31a76c6b43a2df6c5dfdc\jetified-android-sdk-5.5.1\AndroidManifest.xml:20:9-22:66
+425            android:name="io.card.payment.CardIOActivity"
+425-->[io.card:android-sdk:5.5.1] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\8a30dc28eee31a76c6b43a2df6c5dfdc\jetified-android-sdk-5.5.1\AndroidManifest.xml:21:13-58
+426            android:configChanges="keyboardHidden|orientation" />
+426-->[io.card:android-sdk:5.5.1] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\8a30dc28eee31a76c6b43a2df6c5dfdc\jetified-android-sdk-5.5.1\AndroidManifest.xml:22:13-63
+427        <activity android:name="io.card.payment.DataEntryActivity" />
+427-->[io.card:android-sdk:5.5.1] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\8a30dc28eee31a76c6b43a2df6c5dfdc\jetified-android-sdk-5.5.1\AndroidManifest.xml:23:9-70
+427-->[io.card:android-sdk:5.5.1] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\8a30dc28eee31a76c6b43a2df6c5dfdc\jetified-android-sdk-5.5.1\AndroidManifest.xml:23:19-67
+428
+429        <receiver android:name="com.razorpay.RzpTokenReceiver" >
+429-->[com.razorpay:checkout:1.5.16] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\a8e028b28b7df41e9b6952597f4a278e\jetified-checkout-1.5.16\AndroidManifest.xml:12:9-16:20
+429-->[com.razorpay:checkout:1.5.16] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\a8e028b28b7df41e9b6952597f4a278e\jetified-checkout-1.5.16\AndroidManifest.xml:12:19-63
+430            <intent-filter>
+430-->[com.razorpay:checkout:1.5.16] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\a8e028b28b7df41e9b6952597f4a278e\jetified-checkout-1.5.16\AndroidManifest.xml:13:13-15:29
+431                <action android:name="rzp.device_token.share" />
+431-->[com.razorpay:checkout:1.5.16] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\a8e028b28b7df41e9b6952597f4a278e\jetified-checkout-1.5.16\AndroidManifest.xml:14:17-65
+431-->[com.razorpay:checkout:1.5.16] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\a8e028b28b7df41e9b6952597f4a278e\jetified-checkout-1.5.16\AndroidManifest.xml:14:25-62
+432            </intent-filter>
+433        </receiver>
+434
+435        <activity
+435-->[com.braintreepayments.api:google-payment:3.1.1] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\58fbdc22d94325e9d5a3631ff2a506b1\jetified-google-payment-3.1.1\AndroidManifest.xml:12:9-14:62
+436            android:name="com.braintreepayments.api.GooglePaymentActivity"
+436-->[com.braintreepayments.api:google-payment:3.1.1] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\58fbdc22d94325e9d5a3631ff2a506b1\jetified-google-payment-3.1.1\AndroidManifest.xml:13:13-75
+437            android:theme="@style/bt_transparent_activity" />
+437-->[com.braintreepayments.api:google-payment:3.1.1] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\58fbdc22d94325e9d5a3631ff2a506b1\jetified-google-payment-3.1.1\AndroidManifest.xml:14:13-59
+438        <activity
+438-->[org.jfrog.cardinalcommerce.gradle:cardinalmobilesdk:2.2.1-2] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\d430d07d34feaf339c4be78a395bf999\jetified-cardinalmobilesdk-2.2.1-2\AndroidManifest.xml:17:9-19:65
+439            android:name="com.cardinalcommerce.shared.cs.userinterfaces.ChallengeHTMLView"
+439-->[org.jfrog.cardinalcommerce.gradle:cardinalmobilesdk:2.2.1-2] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\d430d07d34feaf339c4be78a395bf999\jetified-cardinalmobilesdk-2.2.1-2\AndroidManifest.xml:18:13-91
+440            android:theme="@style/CardinalSDKTheme.ActionBar" />
+440-->[org.jfrog.cardinalcommerce.gradle:cardinalmobilesdk:2.2.1-2] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\d430d07d34feaf339c4be78a395bf999\jetified-cardinalmobilesdk-2.2.1-2\AndroidManifest.xml:19:13-62
+441        <activity
+441-->[org.jfrog.cardinalcommerce.gradle:cardinalmobilesdk:2.2.1-2] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\d430d07d34feaf339c4be78a395bf999\jetified-cardinalmobilesdk-2.2.1-2\AndroidManifest.xml:20:9-23:76
+442            android:name="com.cardinalcommerce.shared.cs.userinterfaces.ChallengeNativeView"
+442-->[org.jfrog.cardinalcommerce.gradle:cardinalmobilesdk:2.2.1-2] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\d430d07d34feaf339c4be78a395bf999\jetified-cardinalmobilesdk-2.2.1-2\AndroidManifest.xml:21:13-93
+443            android:theme="@style/CardinalSDKTheme.ActionBar"
+443-->[org.jfrog.cardinalcommerce.gradle:cardinalmobilesdk:2.2.1-2] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\d430d07d34feaf339c4be78a395bf999\jetified-cardinalmobilesdk-2.2.1-2\AndroidManifest.xml:22:13-62
+444            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+444-->[org.jfrog.cardinalcommerce.gradle:cardinalmobilesdk:2.2.1-2] C:\Users\anh2cn\.gradle\caches\transforms-2\files-2.1\d430d07d34feaf339c4be78a395bf999\jetified-cardinalmobilesdk-2.2.1-2\AndroidManifest.xml:23:13-73
+445    </application>
+446
+447</manifest>
